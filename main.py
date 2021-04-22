@@ -153,13 +153,6 @@ def eldritch_blast(rays=1, proficiency=5, mod=5, misc_bonus=0):
 #         return
 #
 #     responses = {
-#         'fireball': fireball(),
-#         '69': 'Nice.',
-#         'get your shit together': 'https://www.youtube.com/watch?v=-tGL-buZ94Y',
-#         'no one gives a fuck': 'https://www.youtube.com/watch?v=xX3JgSJ-dN0',
-
-#         '$chucks': '',
-#         '$chucks20': '',
 #         'march': 'https://www.youtube.com/watch?v=pwjLcwbT-xE',
 #         'bobby': eldritch_blast(rays=3, proficiency=5, mod=5),
 #         'lou': 'LOU: *Cape billows furiously*',
