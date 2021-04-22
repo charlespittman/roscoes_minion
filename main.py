@@ -162,8 +162,6 @@ def eldritch_blast(rays=1, proficiency=5, mod=5, misc_bonus=0):
 #         'toe': "TOE: Get in there, Lieutenant Squeakers!  Sergeant Dale, you're on deck!",
 #         'sarris': 'SARRIS: Critical hit on a family member.',
 #         'tpk': 'Rocks fall.  Everyone dies.',
-#         'mad mage': '',
-#         'dragonheist20': 'https://ddb.ac/campaigns/join/1361590763774279',
 #     }
 #
 #     msg = message.content
