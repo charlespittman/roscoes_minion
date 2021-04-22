@@ -1,3 +1,5 @@
+# I'm honestly not sure who to attribute this to.  Found a json file in a github gist and just reformatted it.
+
 import d20
 import random
 
