@@ -75,8 +75,8 @@ async def invite(ctx, group=None):
     if group is None:
         await ctx.send('No group given.')
     elif group.lower() in 'hinterland':
-        await ctx.send('Roll20: https://app.roll20.net/join/6181920/-9IaEw')
-        await ctx.send('D&D Beyond: https://www.dndbeyond.com/campaigns/527568')
+        await ctx.send(f'Roll20: {data["hinterland_roll20"]}')
+        await ctx.send(f'D&D Beyond: {data["hinterland_discord"]}')
     else:
         await ctx.send("Campaign not found.")
 
