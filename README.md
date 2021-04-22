@@ -7,8 +7,8 @@ pip3 install d20     # Fancy dice roller
 pip3 install discord # Connect to Discord
 pip3 install pynacl  # Encode sounds for voice chat
 
-Also requires "./secrets.json"
+Also requires "./secrets.json":
+
 {
   "token": "SUPER SECRET TOKEN FOR DISCORD API"
 }
-
