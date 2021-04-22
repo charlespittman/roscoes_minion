@@ -29,12 +29,15 @@ async def on_ready():
 
 @bot.command()
 async def join(ctx):
+    """Join voice channel.
+    Note: requester must currently be in a voice channel."""
     channel = ctx.author.voice.channel
     await channel.connect()
 
 
 @bot.command()
 async def leave(ctx):
+    """Leave voice channel."""
     await ctx.voice_client.disconnect()
 
 
@@ -117,7 +120,7 @@ async def wand_of_wonder(ctx, roll=None):
 @bot.command()
 async def roll(ctx, formula=None):
     """Rolls dice
-    Note: formula cannot include spaces."""
+    Note: formula cannot include spaces, unless wrapped in double-quotes"""
     if not formula:
         await ctx.send(d20.roll('1d20'))
     else:
@@ -126,10 +129,13 @@ async def roll(ctx, formula=None):
 
 @bot.command()
 async def roll_stats(ctx):
+    """Rolls attributes for a new character.
+    Roll 4d6, reroll 1s once, keep 3 highest."""
     for attribute in ATTRIBUTES:
         await ctx.send(f'{attribute}: {d20.roll("4d6ro1kh3")}')
 
 
+# Doesn't really work yet
 def eldritch_blast(rays=1, proficiency=5, mod=5, misc_bonus=0):
     ret = ['Bobby: ELDRITCH BLAST']
     for _ in range(rays):

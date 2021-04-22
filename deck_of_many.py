@@ -1,3 +1,5 @@
+# Still need to format rest of cards.
+
 [
 {'card': 'King of diamonds', 'name': 'Sun',},
 {'card': 'Queen of diamonds', 'name': 'Moon',},
