@@ -52,6 +52,32 @@ async def horn(ctx):
 
 
 @bot.command()
+async def womp(ctx):
+    """Womp womp.
+
+    Note: bot must already be in a voice channel."""
+    source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio('sad_trombone.mp3'))
+    ctx.voice_client.play(source, after=lambda e: print(f'Player error: {e}') if e else None)
+
+
+@bot.command()
+async def secret(ctx):
+    """Secret found.
+
+    Note: bot must already be in a voice channel."""
+    source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio('zelda_secret_sound.mp3'))
+    ctx.voice_client.play(source, after=lambda e: print(f'Player error: {e}') if e else None)
+
+
+@bot.command()
+async def treasure(ctx):
+    """Treasure chest sound.
+
+    Note: bot must already be in a voice channel."""
+    source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio('treasure_found.mp3'))
+    ctx.voice_client.play(source, after=lambda e: print(f'Player error: {e}') if e else None)
+
+@bot.command()
 async def bruh(ctx, name=None):
     """Get your shit together."""
     url = 'https://www.youtube.com/watch?v=-tGL-buZ94Y'
@@ -135,6 +161,39 @@ async def roll_stats(ctx):
         await ctx.send(f'{attribute}: {d20.roll("4d6ro1kh3")}')
 
 
+@bot.command()
+async def bobby(ctx):
+    await ctx.send('BOBBY: ELDRITCH BLAST! (x6)')
+
+
+@bot.command()
+async def lou(ctx):
+    await ctx.send('LOU: *Cape billows furiously*')
+
+
+@bot.command()
+async def quotix(ctx):
+    await ctx.send('QUOTIX: I punch him in the dick.')
+
+
+@bot.command()
+async def roscoe(ctx):
+    responses = ['ROSCOE: *Cape billows even more furiously*',
+                 'ROSCOE: Ok, I have a plan....',
+                 'ROSCOE: Ok, I have a different plan....']
+    await ctx.send(random.choice(responses))
+
+
+@bot.command()
+async def sarris(ctx):
+    await ctx.send('SARRIS: Critical hit on a family member.')
+
+
+@bot.command()
+async def toe(ctx):
+    await ctx.send("TOE: Get in there, Lieutenant Squeakers!  Sergeant Dale, you're on deck!")
+
+
 # Doesn't really work yet
 def eldritch_blast(rays=1, proficiency=5, mod=5, misc_bonus=0):
     ret = ['Bobby: ELDRITCH BLAST']
@@ -155,11 +214,6 @@ def eldritch_blast(rays=1, proficiency=5, mod=5, misc_bonus=0):
 #     responses = {
 #         'march': 'https://www.youtube.com/watch?v=pwjLcwbT-xE',
 #         'bobby': eldritch_blast(rays=3, proficiency=5, mod=5),
-#         'lou': 'LOU: *Cape billows furiously*',
-#         'roscoe': 'ROSCOE: *Cape billows even more furiously*',
-#         'quotix': 'QUOTIX: I punch him in the dick.',
-#         'toe': "TOE: Get in there, Lieutenant Squeakers!  Sergeant Dale, you're on deck!",
-#         'sarris': 'SARRIS: Critical hit on a family member.',
 #         'tpk': 'Rocks fall.  Everyone dies.',
 #     }
 #

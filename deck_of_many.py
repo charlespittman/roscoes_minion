@@ -1,6 +1,6 @@
 # Still need to format rest of cards.
 
-[
+std_deck = [
 {'card': 'King of diamonds', 'name': 'Sun',},
 {'card': 'Queen of diamonds', 'name': 'Moon',},
 {'card': 'Jack of diamonds', 'name': 'Star',},
@@ -16,7 +16,7 @@
 {'card': 'Joker (without TM', 'name': 'Jester', 'desc': "You gain 10,000 XP, or you can draw two additional cards beyond your declared draws."},
 ]
 
-[
+big_deck = [
 {'card': 'Two of diamonds', 'name': 'Comet', 'desc': "If you single-handedly defeat the next Hostile monster or group of Monsters you encounter, you gain Experience Points enough to gain one level. Otherwise, this card has no Effect."},
 {'card': 'Ace of hearts', 'name': 'Fates', 'desc': "Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die."},
 {'card': 'Two of hearts', 'name': 'Gem', 'desc': "Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet."},
@@ -24,7 +24,7 @@
 {'card': 'Two of clubs', 'name': 'Idiot', 'desc': "Permanently reduce your Intelligence by 1d4 + 1 (to a minimum score of 1). You can draw one additional card beyond your declared draws."},
 {'card': 'Ace of spades', 'name': 'Donjon', 'desc': "You disappear and become entombed in a state of suspended animation in an extradimensional Sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the Sphere. You can't be located by any Divination magic, but a wish spell can reveal the location of your prison. You draw no more cards."},
 {'card': 'Two of spades', 'name': 'Balance', 'desc': "Your mind suffers a wrenching alteration, causing your Alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no Effect on you."},
-{'card': 'Joker (with TM', 'name': 'Fool', 'desc': "You lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an amount that leaves you with just enough XP to keep your level."},
+{'card': 'Joker (with TM)', 'name': 'Fool', 'desc': "You lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an amount that leaves you with just enough XP to keep your level."},
 {'card': 'Ace of diamonds', 'name': 'Vizier',},
 ]
 
